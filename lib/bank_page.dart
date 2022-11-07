@@ -43,55 +43,60 @@ class _BankPageState extends State<BankPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: const Color(0xFF292D32),
-        body: Center(
-            child: Container(
-                margin: const EdgeInsets.symmetric(horizontal: 30),
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                        color: Colors.white.withOpacity(0.1),
-                        offset: const Offset(-6.0, -6.0),
-                        blurRadius: 16.0),
-                    BoxShadow(
-                        color: Colors.black.withOpacity(0.4),
-                        offset: const Offset(6.0, 6.0),
-                        blurRadius: 16.0),
-                  ],
-                  color: const Color(0xFF292D32),
-                  borderRadius: BorderRadius.circular(12.0),
-                ),
-                padding: const EdgeInsets.all(20),
-                child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Text('Total Amount:\n \$240,000,000',
-                          key: moneyKey,
-                          style: const TextStyle(
-                              color: Color.fromARGB(255, 212, 212, 212),
-                              fontWeight: FontWeight.bold,
-                              fontSize: 25)),
-                      const SizedBox(height: 50),
-                      Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            ElevatedButton(
-                                key: withdrawKey,
-                                onPressed: () {},
-                                style: ElevatedButton.styleFrom(
-                                    backgroundColor: Colors.red),
-                                child: const Text('Withdraw',
-                                    style: TextStyle(color: Colors.white))),
-                            ElevatedButton(
-                                key: investKey,
-                                onPressed: () {},
-                                style: ElevatedButton.styleFrom(
-                                  backgroundColor: Colors.green,
-                                ),
-                                child: const Text('Invest',
-                                    style: TextStyle(color: Colors.white))),
-                          ])
-                    ]))));
+      backgroundColor: const Color(0xFF292D32),
+      body: Center(
+        child: Container(
+          margin: const EdgeInsets.symmetric(horizontal: 30),
+          decoration: BoxDecoration(
+            boxShadow: [
+              BoxShadow(
+                  color: Colors.white.withOpacity(0.1),
+                  offset: const Offset(-6.0, -6.0),
+                  blurRadius: 16.0),
+              BoxShadow(
+                  color: Colors.black.withOpacity(0.4),
+                  offset: const Offset(6.0, 6.0),
+                  blurRadius: 16.0),
+            ],
+            color: const Color(0xFF292D32),
+            borderRadius: BorderRadius.circular(12.0),
+          ),
+          padding: const EdgeInsets.all(20),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text('Total Amount:\n \$240,000,000',
+                  key: moneyKey,
+                  style: const TextStyle(
+                      color: Color.fromARGB(255, 212, 212, 212),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 25)),
+              const SizedBox(height: 50),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  ElevatedButton(
+                      key: withdrawKey,
+                      onPressed: () {},
+                      style:
+                          ElevatedButton.styleFrom(backgroundColor: Colors.red),
+                      child: const Text('Withdraw',
+                          style: TextStyle(color: Colors.white))),
+                  ElevatedButton(
+                      key: investKey,
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.green,
+                      ),
+                      child: const Text('Invest',
+                          style: TextStyle(color: Colors.white))),
+                ],
+              )
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
