@@ -171,7 +171,7 @@ List<TargetFocus> addBankTargets({
       radius: 10,
       contents: [
         TargetContent(
-          align: ContentAlign.bottom,
+          align: ContentAlign.top,
           builder: (context, controller) => Container(
             alignment: Alignment.center,
             child: Column(
