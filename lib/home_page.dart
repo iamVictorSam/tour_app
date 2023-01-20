@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tour_app/main.dart';
 import 'package:tour_app/tour_target.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 
@@ -32,7 +33,11 @@ class _HomePageState extends State<HomePage> {
         opacityShadow: 0.8,
         onFinish: () {
           // The tour finshes here. You can add it to local storage to avoid showing again
-          print('Finished Tour');
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const BankScreen(),
+              ));
         },
         onSkip: () {
           // The tour finshes here. You can add it to local storage to avoid showing again
