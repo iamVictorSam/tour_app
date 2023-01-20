@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tour_app/main.dart';
+import 'package:tour_app/bank_screen.dart';
 import 'package:tour_app/tour_target.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 
