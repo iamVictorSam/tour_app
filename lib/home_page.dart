@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tour_app/bank_screen.dart';
+import 'package:tour_app/bank_page.dart';
 import 'package:tour_app/tour_target.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 
@@ -36,7 +36,7 @@ class _HomePageState extends State<HomePage> {
           Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => const BankScreen(),
+                builder: (context) => const BankPage(),
               ));
         },
         onSkip: () {

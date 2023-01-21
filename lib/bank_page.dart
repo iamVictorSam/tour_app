@@ -2,20 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:tour_app/tour_target.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 
-class BankScreen extends StatefulWidget {
-  const BankScreen({super.key});
+class BankPage extends StatefulWidget {
+  const BankPage({super.key});
 
   @override
-  State<BankScreen> createState() => _BankScreenState();
+  State<BankPage> createState() => _BankPageState();
 }
 
-class _BankScreenState extends State<BankScreen> {
+class _BankPageState extends State<BankPage> {
   final cardKey = GlobalKey();
   final moneyKey = GlobalKey();
   final withdrawKey = GlobalKey();
   final investKey = GlobalKey();
-
-  bool reveal = false;
 
   late TutorialCoachMark _tutorialCoachMark;
 
