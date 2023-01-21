@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 
-List<TargetFocus> addTourTargets({
-  required GlobalKey pageKey,
-  required GlobalKey profileKey,
-  required GlobalKey wealthKey,
-  required GlobalKey buttonKey,
+List<TargetFocus> addBankTargets({
+  required GlobalKey cardKey,
+  required GlobalKey moneyKey,
+  required GlobalKey withdrawKey,
+  required GlobalKey investKey,
 }) {
   List<TargetFocus> targets = [];
   targets.add(
     TargetFocus(
-      keyTarget: pageKey,
+      keyTarget: cardKey,
       alignSkip: Alignment.bottomRight,
       shape: ShapeLightFocus.RRect,
       radius: 10,
@@ -22,12 +22,12 @@ List<TargetFocus> addTourTargets({
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: const [
-                Text('This is The Home Page',
+                Text('Here is your Bank!!',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                      fontSize: 20,
+                      color: Colors.black,
+                      fontSize: 25,
                     )),
               ],
             ),
@@ -39,24 +39,24 @@ List<TargetFocus> addTourTargets({
 
   targets.add(
     TargetFocus(
-      keyTarget: profileKey,
+      keyTarget: moneyKey,
       alignSkip: Alignment.bottomLeft,
-      shape: ShapeLightFocus.Circle,
+      shape: ShapeLightFocus.RRect,
       radius: 10,
       contents: [
         TargetContent(
-          align: ContentAlign.bottom,
+          align: ContentAlign.top,
           builder: (context, controller) => Container(
             alignment: Alignment.center,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: const [
-                Text('Your Profile Icon',
+                Text('This is your Current amount',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                      fontSize: 20,
+                      color: Colors.black,
+                      fontSize: 25,
                     ))
               ],
             ),
@@ -68,7 +68,7 @@ List<TargetFocus> addTourTargets({
 
   targets.add(
     TargetFocus(
-      keyTarget: wealthKey,
+      keyTarget: withdrawKey,
       alignSkip: Alignment.topRight,
       shape: ShapeLightFocus.RRect,
       radius: 10,
@@ -80,12 +80,12 @@ List<TargetFocus> addTourTargets({
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: const [
-                Text('Hey!!\n This is your Worth',
+                Text('You can withdraw your cash!!',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                      fontSize: 20,
+                      color: Colors.black,
+                      fontSize: 25,
                     ))
               ],
             ),
@@ -97,7 +97,7 @@ List<TargetFocus> addTourTargets({
 
   targets.add(
     TargetFocus(
-      keyTarget: buttonKey,
+      keyTarget: investKey,
       alignSkip: Alignment.topRight,
       shape: ShapeLightFocus.RRect,
       radius: 10,
@@ -109,12 +109,12 @@ List<TargetFocus> addTourTargets({
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: const [
-                Text('Click to find out how much you worth',
+                Text('Or, invest it and get a double',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      color: Colors.white,
+                      color: Colors.black,
                       fontWeight: FontWeight.bold,
-                      fontSize: 20,
+                      fontSize: 25,
                     ))
               ],
             ),
