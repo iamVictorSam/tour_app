@@ -12,7 +12,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final wealthKey = GlobalKey();
-  final profileKey = GlobalKey();
+  final bankKey = GlobalKey();
   final buttonKey = GlobalKey();
   final pageKey = GlobalKey();
 
@@ -24,7 +24,7 @@ class _HomePageState extends State<HomePage> {
     _tutorialCoachMark = TutorialCoachMark(
         targets: addTourTargets(
             pageKey: pageKey,
-            profileKey: profileKey,
+            bankKey: bankKey,
             wealthKey: wealthKey,
             buttonKey: buttonKey),
         colorShadow: Colors.teal,
@@ -72,9 +72,11 @@ class _HomePageState extends State<HomePage> {
                 Text('Home',
                     style: const TextStyle(color: Colors.white, fontSize: 22),
                     key: pageKey),
-                CircleAvatar(
-                  key: profileKey,
-                  child: const Icon(Icons.person),
+                IconButton(
+                  key: bankKey,
+                  onPressed: () {},
+                  color: Colors.white,
+                  icon: const Icon(Icons.safety_check_rounded),
                 ),
               ]),
               const Spacer(),

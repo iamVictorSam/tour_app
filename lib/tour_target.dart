@@ -3,7 +3,7 @@ import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 
 List<TargetFocus> addTourTargets({
   required GlobalKey pageKey,
-  required GlobalKey profileKey,
+  required GlobalKey bankKey,
   required GlobalKey wealthKey,
   required GlobalKey buttonKey,
 }) {
@@ -39,7 +39,7 @@ List<TargetFocus> addTourTargets({
 
   targets.add(
     TargetFocus(
-      keyTarget: profileKey,
+      keyTarget: bankKey,
       alignSkip: Alignment.bottomLeft,
       shape: ShapeLightFocus.Circle,
       radius: 10,
@@ -51,7 +51,7 @@ List<TargetFocus> addTourTargets({
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: const [
-                Text('Your Profile Icon',
+                Text('This is your Bank!!',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
