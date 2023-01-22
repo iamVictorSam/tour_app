@@ -84,7 +84,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ]),
               const Spacer(),
-              const Text('You are Rich',
+              const Text('You are Rich !!',
                   style: TextStyle(
                       fontSize: 26,
                       fontWeight: FontWeight.bold,
