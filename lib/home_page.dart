@@ -74,7 +74,11 @@ class _HomePageState extends State<HomePage> {
                     key: pageKey),
                 IconButton(
                   key: bankKey,
-                  onPressed: () {},
+                  onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const BankPage(),
+                      )),
                   color: Colors.white,
                   icon: const Icon(Icons.safety_check_rounded),
                 ),
